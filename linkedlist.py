@@ -46,4 +46,6 @@ class LinkedList:
         while cur_node and cur_node.data != value_to_delete:
             prev = cur_node
             cur_node = cur_node.next
-        prev = cur_node.next
+        prev.next = cur_node.next
+        cur_node = None
+        
