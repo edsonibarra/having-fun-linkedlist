@@ -54,4 +54,15 @@ class LinkedList:
             cur_node = cur_node.next
         prev.next = cur_node.next
         cur_node = None
+    
+    def get_len(self):
+        count = 0
+        if self.is_empty():
+            print(count)
+            return
+        cur_node = self.head
+        while cur_node:
+            count += 1
+            cur_node = cur_node.next
+        print(count)
         
