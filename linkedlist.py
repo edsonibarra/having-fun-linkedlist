@@ -65,4 +65,4 @@ class LinkedList:
             count += 1
             cur_node = cur_node.next
         print(f"len = {count}")
-        
+        return count
