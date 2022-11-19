@@ -9,7 +9,7 @@ def main():
     ll.append(3)
     ll.append(4)
     ll.append(5)
-
+    ll.get_len()
     ll.print_list()
 
     ll.prepend(0)
@@ -27,5 +27,7 @@ def main():
     ll.delete_by_value(1)
     
     ll.print_list()
+    
+    ll.get_len()    
 
 main()  

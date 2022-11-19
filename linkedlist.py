@@ -60,9 +60,9 @@ class LinkedList:
         if self.is_empty():
             print(count)
             return
-        cur_node = self.head
+        cur_node = self.head    
         while cur_node:
             count += 1
             cur_node = cur_node.next
-        print(count)
+        print(f"len = {count}")
         
