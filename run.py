@@ -20,6 +20,12 @@ def main():
 
     ll.print_list()
 
+    ll.delete_by_value(0)
     
+    ll.print_list()
+    
+    ll.delete_by_value(1)
+    
+    ll.print_list()
 
 main()  
