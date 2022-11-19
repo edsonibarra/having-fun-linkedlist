@@ -27,3 +27,14 @@ class LinkedList:
         while cur_node.next:
             cur_node = cur_node.next
         cur_node.next = new_node
+    
+    def prepend(self, data):
+        new_node = Node(data)
+        if self.is_empty():
+            self.head = new_node
+            return
+        first_node = self.head
+        new_node.next = first_node
+        self.head = new_node
+    
+    
