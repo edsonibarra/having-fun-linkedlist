@@ -43,6 +43,12 @@ class LinkedList:
             return
         prev = None
         cur_node = self.head
+        
+        if cur_node.data == value_to_delete:
+            self.head = cur_node.next
+            cur_node = None
+            return
+
         while cur_node and cur_node.data != value_to_delete:
             prev = cur_node
             cur_node = cur_node.next
