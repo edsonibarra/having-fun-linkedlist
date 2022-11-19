@@ -87,3 +87,7 @@ class LinkedList:
     #TODO: Implement swap nodes   
     def swap_nodes(self, node1, node2):
         pass
+    
+    #TODO: Implement reverse list method
+    def reverse_list(self):
+        pass
