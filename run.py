@@ -28,6 +28,16 @@ def main():
     
     ll.print_list()
     
-    ll.get_len()    
+    ll.get_len()
+    
+    ll.delete_by_position(1)
+    
+    ll.print_list()
+    ll.get_len()  
+    
+    ll.delete_by_position(0)
+    
+    ll.print_list()
+    ll.get_len()  
 
 main()  
