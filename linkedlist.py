@@ -37,4 +37,13 @@ class LinkedList:
         new_node.next = first_node
         self.head = new_node
     
-    
+    def delete_by_value(self, value_to_delete):
+        if self.is_empty():
+            print('Empty List nothing to delete')
+            return
+        prev = None
+        cur_node = self.head
+        while cur_node and cur_node.data != value_to_delete:
+            prev = cur_node
+            cur_node = cur_node.next
+        
