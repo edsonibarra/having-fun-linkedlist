@@ -66,3 +66,20 @@ class LinkedList:
             cur_node = cur_node.next
         print(f"len = {count}")
         return count
+
+    def delete_by_position(self, position_to_delete):
+        if self.is_empty():
+            print('Empty list')
+            return
+        cur_pos = 0
+        cur_node = self.head
+        if position_to_delete == cur_pos:
+            self.head = cur_node.next
+            return
+        prev = None
+        while cur_node and cur_pos != position_to_delete:
+            cur_pos += 1
+            prev = cur_node
+            cur_node = cur_node.next
+        prev.next = cur_node.next
+        cur_node = None
