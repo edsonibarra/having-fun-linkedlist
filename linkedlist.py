@@ -83,3 +83,7 @@ class LinkedList:
             cur_node = cur_node.next
         prev.next = cur_node.next
         cur_node = None
+     
+    #TODO: Implement swap nodes   
+    def swap_nodes(self, node1, node2):
+        pass
