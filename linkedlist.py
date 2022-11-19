@@ -9,7 +9,7 @@ class LinkedList:
         if self.is_empty():
             print('Empty List')
             return
-        print('---PRINTING LIST---')
+        print('\n---PRINTING LIST---')
         cur_node = self.head
         while cur_node:
             print(cur_node.data)
