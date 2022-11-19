@@ -17,3 +17,13 @@ class LinkedList:
     
     def is_empty(self):
         return self.head is None
+
+    def append(self, data):
+        new_node = Node(data)
+        if self.is_empty():
+            self.head = new_node
+            return
+        cur_node = self.head
+        while cur_node.next:
+            cur_node = cur_node.next
+        cur_node.next = new_node
